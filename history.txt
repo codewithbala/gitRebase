@@ -1,0 +1,500 @@
+  211  touch test.txt
+  212  status
+  213  git status
+  214  clear
+  215  vim  test.txt
+  216  git add .
+  217  git commit -m "m1"
+  218  git status
+  219  vim test.txt
+  220  git status
+  221  git add .
+  222  git commit -m "m2"
+  223  vim test.txt 
+  224  git add .
+  225  git commit -m "m3"
+  226  git lo
+  227  git reset --mixed 564e429
+  228  git status
+  229  git lo
+  230  vim test.txt 
+  231  git status
+  232  git add .
+  233  git commit -m "login security feature added"
+  234  git lo
+  235  vim test.txt 
+  236  git add .
+  237  git commit -m "security update"
+  238  git lo
+  239  git reset --soft 564e429
+  240  git status
+  241  git lo
+  242  git add .
+  243  git commit -m "Login security feature released"
+  244  git lo
+  245  git status
+  246  git lo
+  247  ls
+  248  vim test.txt 
+  249  git status
+  250  git add .
+  251  git commit -m "updates"
+  252  git status
+  253  git lo
+  254  git reset --soft 564e429
+  255  git status
+  256  vim test.txt 
+  257  git status
+  258  git add .
+  259  git commit -m "combined both files"
+  260  git status
+  261  git lo
+  262  git reset --hard 564e429
+  263  git lo
+  264  ls
+  265  git reflog
+  266  git reset --hard 0e9f747
+  267  ls
+  268  cat test.txt 
+  269  git push -u origin main
+  270  git lo
+  271  git reset --hard 564e429
+  272  git fetch
+  273  git status
+  274  git lo
+  275  git pull
+  276  git lo
+  277  cd ..
+  278  mkdir revert
+  279  cd revert
+  280  touch a.txt
+  281  git add .
+  282  git rm a.txt 
+  283  git rm -f a.txt 
+  284  ls
+  285  exit
+  286  cd GitSample1/
+  287  ls
+  288  cd rmGitProject/
+  289  ls
+  290  cd branchingEx/
+  291  ls
+  292  clear
+  293  git status
+  294  git lo
+  295  git checkout -b loginfeature
+  296  git checkout -b logout
+  297  git branch
+  298  git checkout dev
+  299  git branch logout -d
+  300  git branch
+  301  git branch logout
+  302  git branch
+  303  git log -g loginfeature 
+  304  git show-branch --list loginfeature 
+  305  cd ..
+  306  cd ..
+  307  mkdir merge
+  308  cd merge
+  309  nano readme.md
+  310  nano .gitignore
+  311  git add .
+  312  git status
+  313  git commit -m "m1"
+  314  git lo
+  315  nano .gitignore
+  316  git status
+  317  nano readme.md
+  318  git add .
+  319  git commit -m "m2"
+  320  git branch
+  321  git branch dev
+  322  git branch
+  323  git status
+  324  git checkout dev
+  325  git lo
+  326  echo "Developer's login" >login.txt
+  327  cat login.txt
+  328  git status
+  329  git add .
+  330  git commit -m "d1"
+  331  nano login.txt
+  332  git add .
+  333  git commit -m "d2"
+  334  git branch
+  335  git ceckout main
+  336  git checkout main
+  337  git merge dev
+  338  git  lo
+  339  git checkout master
+  340  git checkout main
+  341  git lo
+  342  git checkout main
+  343  git push
+  344  git lo
+  345  git checkout dev
+  346  git lo
+  347  git checkout main
+  348  echo "adding abc" > abc.txt
+  349  git status
+  350  git add .
+  351  git commit -m "m3"
+  352  git checkout main
+  353  cd ..
+  354  git status
+  355  git add .
+  356  git commit -m "add all files"
+  357  git push
+  358  git status
+  359  ls
+  360  git add rmGitProject/
+  361  git commit -m "rmGitProject"
+  362  cd rmGitProject/
+  363  ls
+  364  git add .
+  365  git commit -m "add all files"
+  366  git push
+  367  cd ..
+  368  git status
+  369  git push
+  370  cd merge/
+  371  git status
+  372  git lo
+  373  git checkout dev
+  374  git checlout main
+  375  git checkout main
+  376  ls
+  377  nano abc.txt
+  378  git status
+  379  git add ../rmGitProject/
+  380  git commit -m "push "
+  381  git push
+  382  git status
+  383  ls
+  384  nano abc.txt
+  385  git status
+  386  touch 1.txt 2.txt 3.txt
+  387  git status
+  388  git add 1.txt
+  389  git commit -m "m1"
+  390  git add 2.txt
+  391  git commit -m "m2"
+  392  git add 3.txt
+  393  git commit -m "m3"
+  394  git lo
+  395  git branch
+  396  git checkout dev
+  397  git branch
+  398  touch dev1.txt dev2.txt
+  399  git status
+  400  git restore ../google-map-popover-example/
+  401  git restore ../rmGitProject/
+  402  git status
+  403  git add ../google-map-popover-example/
+  404  git add ../rmGitProject/
+  405  git commit -m "add folders"
+  406  git status
+  407  git add ../q
+  408  git commit -m "another commit"
+  409  git status
+  410  git lo
+  411  git staus
+  412  git status
+  413  git add .
+  414  git commit -m "m4"
+  415  git lo
+  416  git branch
+  417  git checkout main
+  418  git merge
+  419  git lo
+  420  git checkout dev
+  421  git lo
+  422  git status
+  423  git checkout main
+  424  git push
+  425  git status
+  426  ls
+  427  cd ..
+  428  ls
+  429  rmdir merge
+  430  rmdir -r -f merge
+  431  rmdir  -rf merge
+  432  rmdir  -f merge
+  433  rmdir --help
+  434  mkdir merge1
+  435  cd merge1
+  436  nano readme.md
+  437  nano .gitignore
+  438  git status
+  439  ls
+  440  git add .
+  441  git status
+  442  git commit -m "m1"
+  443  git status
+  444  git lo
+  445  nano .gitignore
+  446  git add .
+  447  git commit -m "m2"
+  448  git status
+  449  git lo
+  450  nano readme.md
+  451  git add .
+  452  git commit -m "m3"
+  453  git branch
+  454  git branch dev
+  455  cd ..
+  456  cd ..
+  457  mkdir merge
+  458  git init
+  459  git status
+  460  cd merge
+  461  git init
+  462  ls
+  463  git status
+  464  git lo
+  465  git clone git@github.com:codewithbala/gitMerge.git
+  466  ls
+  467  cd gitMerge/
+  468  ls
+  469  nano README.md 
+  470  git status
+  471  git add .
+  472  git commit -m "m1"
+  473  git lo
+  474  nano .gitignore
+  475  git status
+  476  git status
+  477  git commit -m "m2"
+  478  git lo
+  479  git add .
+  480  git commit -m "m2"
+  481  git lo
+  482  git branch
+  483  git branch dev
+  484  git checkout dev
+  485  git lo
+  486  echo "developers login"
+  487  echo "developers login" >login.txt
+  488  cat login.txt
+  489  git status
+  490  git add .
+  491  git commit -m "d1"
+  492  git lo
+  493  nano login.txt 
+  494  git status
+  495  git add .
+  496  git commit -m "d2"
+  497  git lo
+  498  git checkout main
+  499  git branch
+  500  git merge dev
+  501  git lo
+  502  cd..
+  503  cd ..
+  504  ls
+  505  cd gitMerge/
+  506  git push
+  507  git status
+  508  cd ..
+  509  cd gitMerge/
+  510  mkdir gitRecursive
+  511  cd gitRecursive/
+  512  nano abc.txt
+  513  git status
+  514  git add .
+  515  git staus
+  516  git status
+  517  git commit -m "m1"
+  518  git status
+  519  nano 2.txt
+  520  git status
+  521  git add .
+  522  git commit -m "m2"
+  523  git branch
+  524  git lo
+  525  cd ..
+  526  cd ..
+  527  mkdir gitRecursive
+  528  cd gitRecursive/
+  529  git status
+  530  nano 1.txt
+  531  git add .
+  532  git lo
+  533  git commit -m "m1"
+  534  git lo
+  535  git branch
+  536  nano 2.txt
+  537  git add .
+  538  git commit -m "m2"
+  539  git status
+  540  git lo
+  541  git branch
+  542  git branch dev1
+  543  git checkout dev1
+  544  git branch
+  545  touch 1.txt 2.txt
+  546  git add .
+  547  git commit -m "d1"
+  548  git lo
+  549  nano 1.txt
+  550  nano 3.txt 4.txt
+  551  git status
+  552  git add .
+  553  git commit -m "d1"
+  554  git lo
+  555  nano 3.txt
+  556  git status
+  557  git add .
+  558  git commit -m "d2"
+  559  git lo
+  560  git branch
+  561  git checkout main
+  562  git lo
+  563  touch 7.txt
+  564  nano 7.txt
+  565  git add .
+  566  git commit -m "m3"
+  567  git lo
+  568  git checkout dev1
+  569  git lo
+  570  git checkout main
+  571  git branch
+  572  git merge dev1
+  573  git lo
+  574  git checkout dev1
+  575  git lo
+  576  cd ..
+  577  mkdir conflict
+  578  cd conflict
+  579  touch 1
+  580  git add .
+  581  git commit -m "m1"
+  582  git lo
+  583  git checkout dev1
+  584  git checkout main
+  585  git lo
+  586  cd ..
+  587  cd ..
+  588  git lo
+  589  ls
+  590  cd merge
+  591  git lo
+  592  cd gitRecursive/
+  593  git lo
+  594  git push
+  595  cd ..
+  596  git lo
+  597  git push
+  598  cd ..
+  599  git clone git@github.com:codewithbala/gitConflict.git
+  600  cd gitConflict/
+  601  git lo
+  602  touch one.txt
+  603  nano one.txt
+  604  git add .
+  605  git status
+  606  git commit -m "m1"
+  607  git lo
+  608  nano two.txt
+  609  git add .
+  610  git status
+  611  git commit -m "m2"
+  612  git lo
+  613  git branch
+  614  git branch dev2
+  615  git checkout dev2
+  616  git branch
+  617  nano three.txt
+  618  git status
+  619  git add .
+  620  git commit -m "d1"
+  621  git lo
+  622  nano four.txt
+  623  git add .
+  624  git commit -m "d2"
+  625  git lo
+  626  git checkout main
+  627  git lo
+  628  nano two.txt
+  629  git status
+  630  git add .
+  631  git commit -m "m3"
+  632  git lo
+  633  git checkout dev2
+  634  git lo
+  635  git checkout main
+  636  git checkout dev2
+  637  ls
+  638  nano two.txt
+  639  git status
+  640  git add .
+  641  git commit -m "d3"
+  642  git lo
+  643  git branch
+  644  git checkout main
+  645  git branch
+  646  git merge dev2
+  647  nano two.txt
+  648  nano two.txt
+  649  git staus
+  650  git status
+  651  git add .
+  652  git commit -m "MC"
+  653  git lo
+  654  history -> history.txt
+  655  git push
+  656  history > history.txt
+  657  ls
+  658  git status
+  659  git commit -am "history"
+  660  nano history.txt 
+  661  git status
+  662  git add .
+  663  git commit -m "history"
+  664  git push
+  665  cd ..
+  666  git clone git@github.com:codewithbala/gitRebase.git
+  667  cd gitRebase/
+  668  nano re1.txt
+  669  git add .
+  670  git status
+  671  git commit -m "m1"
+  672  git lo
+  673  nano re2.txt
+  674  git add .
+  675  git status
+  676  git commit -m "m2"
+  677  git lo
+  678  git branch dev
+  679  git branch
+  680  git checkout dev
+  681  git branch
+  682  nano devre1.txt
+  683  git status
+  684  git add .
+  685  git commit -m "d1"
+  686  git lo
+  687  nano devre2.txt
+  688  git status
+  689  git add .
+  690  git commit -m "d2"
+  691  git lo
+  692  git checkout main
+  693  ls
+  694  nano rel.txt
+  695  nano re1.txt
+  696  git status
+  697  git add .
+  698  git commit -m "m3"
+  699  git lo
+  700  git checkout dev
+  701  git status
+  702  git lo
+  703  git rebase main
+  704  git lo
+  705  git checkout main
+  706  git lo
+  707  git merge dev
+  708  git lo
+  709  git push
+  710  history > history.txt
